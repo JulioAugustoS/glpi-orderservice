@@ -1,0 +1,56 @@
+<root>
+    <name>Order Service</name>
+    <key>orderservice</key>
+    <state>beta</state> <!-- stable | unstable | beta | alpha -->
+    <logo></logo>
+    <description>
+        <short>
+            <en>This plugin is capable of generating a service order through the same type.</en>
+            <pt-br>Este plugin é capaz de gerar uma ordem de serviço através de um chamado estando ele fechado ou não.</pt-br>
+        </short>
+        <long>
+            <en>This plugin is capable of generating a service order through the same type.</en>
+            <pt-br>Este plugin é capaz de gerar uma ordem de serviço através de um chamado estando ele fechado ou não.</pt-br>
+        </long>
+    </description>
+    <homepage>https://github.com/JulioAugustoS/glpiorderservice</homepage>
+    <download>https://github.com/JulioAugustoS/glpiorderservice/releases</download>
+    <issues>https://github.com/JulioAugustoS/glpiorderservice/issues</issues>
+    <readme>https://github.com/JulioAugustoS/glpiorderservice/blob/master/README.md</readme>
+    <authors>
+        <author>Julio Augusto</author>
+    </authors>
+    <versions>
+        <version>
+            <num>0.0.3</num>
+            <compatibility>9.3</compatibility>
+            <compatibility>0.85</compatibility>
+            <compatibility>0.90</compatibility>
+            <compatibility>9.1</compatibility>
+            <compatibility>9.2</compatibility>
+        </version>
+    </versions>
+    <langs>
+        <lang>pt-BR</lang>
+    </langs>
+    <license>GPL v2+</license>
+    <tags>
+        <en>
+            <tag>Helpdesk</tag>
+            <tag>Category</tag>
+            <tag>Filter</tag>
+        </en>
+        <lang>
+            <tag>Assistance</tag>
+            <tag>Categorie</tag>
+            <tag>Filtre</tag>
+        </lang>
+        </en>
+        <lang>
+            <tag>tag1</tag>
+        </lang>
+    </tags>
+    <screenshots>
+        <screenshot>http://suporte.passaromarron.com.br:86/glpi/github/Capturar.PNG</screenshot>
+    </screenshots>
+</root>
