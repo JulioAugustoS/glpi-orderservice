@@ -1,0 +1,127 @@
+@media print {
+    body {
+        print-color-adjust: exact;
+    }
+
+    .botao, #botoes {
+        display: none;
+    }
+
+    table > tr > td {
+        text-align: left; 
+        padding: 5px;
+    }
+
+    td, th {
+        text-align: left;
+        padding: 5px;
+    }
+}
+
+td, th {
+    text-align: left;
+    padding: 5px;
+}
+
+.td-logo-1 {
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+.td-logo-2 {
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+.td-logo-1 img {
+    width: 100%;;
+}
+
+.td-logo-2 img {
+    width: 100%;
+}
+
+#titulo {
+    width: calc(100% - 45%);
+    float: left;
+}
+
+.left {
+    text-align: left;
+}
+
+.botao {
+    height: 27px;
+}
+
+#botoes {
+    width: 55%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+input[type="submit1"] {
+    height: 27px;
+}
+
+.table-pri {
+    width: 55%;
+    background: #FFF;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+.table-sec {
+    width: 100%;
+    background: #FFF;
+    font-size: 12px;
+}
+
+.table-tre {
+    width: 100%;
+}
+
+.ali-center {
+    text-align: center;
+}
+
+.size-p {
+    font-size: 20px;
+}
+
+.os-number {
+    font-size: 18px;
+}
+
+.header-td {
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    background-color: #CCC;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #CCC;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+}
+
+.col-12 {
+    width: 100%;
+    float: left;
+}
+
+.padd {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.desc-chamado {
+    min-height: 150px;
+    height: auto;
+}
