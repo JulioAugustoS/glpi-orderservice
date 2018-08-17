@@ -6,11 +6,11 @@
     <description>
         <short>
             <en>This plugin is capable of generating a service order through the same type.</en>
-            <lang>...</lang>
+            <lang>This plugin is capable of generating a service order through the same type.</lang>
         </short>
         <long>
             <en>This plugin is capable of generating a service order through the same type./en>
-            <lang>...</lang>
+            <lang>This plugin is capable of generating a service order through the same type.</lang>
         </long>
     </description>
     <homepage>https://github.com/JulioAugustoS/glpiorderservice</homepage>
