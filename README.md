@@ -1,7 +1,7 @@
 # Service Order Plugin - GLPI
 This plugin is capable of generating a service order through the same type.
 
-![Define filters](http://suporte.passaromarron.com.br:86/glpi/github/Capturar.PNG)
+![Define filters](http://suporte.passaromarron.com.br:86/glpi/github/screen.PNG)
 
 * Open a ticket for each bug/feature so it can be discussed
 * Follow [development guidelines](http://glpi-developer-documentation.readthedocs.io/en/latest/plugins/index.html)
