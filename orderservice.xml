@@ -6,17 +6,17 @@
     <description>
         <short>
             <en>This plugin is capable of generating a service order through the same type.</en>
-            <pt-br>Este plugin é capaz de gerar uma ordem de serviço através de um chamado estando ele fechado ou não.</pt-br>
+            <lang>...</lang>
         </short>
         <long>
-            <en>This plugin is capable of generating a service order through the same type.</en>
-            <pt-br>Este plugin é capaz de gerar uma ordem de serviço através de um chamado estando ele fechado ou não.</pt-br>
+            <en>This plugin is capable of generating a service order through the same type./en>
+            <lang>...</lang>
         </long>
     </description>
     <homepage>https://github.com/JulioAugustoS/glpiorderservice</homepage>
     <download>https://github.com/JulioAugustoS/glpiorderservice/releases</download>
     <issues>https://github.com/JulioAugustoS/glpiorderservice/issues</issues>
-    <readme>https://github.com/JulioAugustoS/glpiorderservice/blob/master/README.md</readme>
+    <readme>https://raw.githubusercontent.com/JulioAugustoS/glpiorderservice/master/README.md</readme>
     <authors>
         <author>Julio Augusto</author>
     </authors>
@@ -27,22 +27,21 @@
         </version>
     </versions>
     <langs>
+        <lang>en_GB</lang>
         <lang>pt-BR</lang>
     </langs>
     <license>GPL v2+</license>
     <tags>
         <en>
             <tag>Helpdesk</tag>
-            <tag>Category</tag>
-            <tag>Filter</tag>
         </en>
         <lang>
-            <tag>Assistance</tag>
-            <tag>Categorie</tag>
-            <tag>Filtre</tag>
+            <tag>Assistence</tag>
         </lang>
     </tags>
     <screenshots>
         <screenshot>http://suporte.passaromarron.com.br:86/glpi/github/Capturar.PNG</screenshot>
+        <screenshot></screenshot>
+        <screenshot></screenshot>
     </screenshots>
 </root>
