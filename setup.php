@@ -43,7 +43,7 @@ class PluginOrderServiceConfig extends CommonDBTM {
         
         return array(
             'name'                  => __('Ordem de Serviço', 'orderservice'),    
-            'version'               => '0.0.3',    
+            'version'               => '0.1.2',    
             'author'                => '<a href="mailto:contato@julioaugusto.me">Julio Augusto</a>',
             'license'               => 'GPLv2+',
             'homepage'              => 'http://glpi-relatorios.sourceforge.net',

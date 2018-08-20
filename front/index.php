@@ -104,12 +104,8 @@ include('../../../inc/config.php');
     $ResOsResponsavelName = $DB->query($SelOsResponsavelName) or die("Erro ao buscar o nome do responsavel!");
     $OsResponsavelFull = $DB->fetch_assoc($ResOsResponsavelName);   
             
-        if($OsResponsavelFull == null):
-            $OsResponsavelName = 'Técnico';
-        else:
-            $OsResponsavelName  = $OsResponsavelFull['firstname']. " " .$OsResponsavelFull['realname'];
-        endif;
-            $EntidadeId         = $Ticket['entities_id'];
+        $OsResponsavelName  = $OsResponsavelFull['firstname']. " " .$OsResponsavelFull['realname'];
+        $EntidadeId         = $Ticket['entities_id'];
     
     // Seleciona a entidade
     $SelEmpresa = "SELECT * FROM glpi_entities WHERE id = '".$EntidadeId."'";
@@ -160,24 +156,23 @@ include('../../../inc/config.php');
                                 <tr>
                                     <!-- Logo 1 -->
                                     <td class="td-logo-1">
-                                        <img src="./img/logo1.png">
+                                        <img src="./img/logo1.png"><br>
+                                        <img src="./img/logo2.png">
                                     </td>
                                     <!-- Titulo -->
                                     <td class="ali-center" id="titulo">
                                         <p class="size-p"><?= $EmpresaPlugin; ?></p>  
-                                        <p class="size-mp"><?= $EnderecoPlugin . " - " . $CidadePlugin . " - " . $TelefonePlugin; ?></p>
-                                        <p class="os-number">Número da OS: <b><?= $OsId; ?></b></p>     
+                                        <p class="size-mp"><?= $EnderecoPlugin . " - " . $CidadePlugin . " - " . $TelefonePlugin; ?></p>   
                                     </td>
-                                    <!-- Logo 2 -->
-                                    <td class="td-logo-2">
-                                        <img src="./img/logo2.png">
-                                    </td>
+                                    <td id="os">
+                                        <p class="size-p ali-center">Número da OS: <br><b class="os-number"><?= $OsId; ?></b></p>
+                                    </td>  
                                 </tr>
                             </table>
                             <hr>
                         </td>
                     </tr>
-                    <tr border="1"><td class="ali-center header-td"><b>Dados do requerente</b></td></tr>
+                    <tr><td class="ali-center header-td"><b>Dados do requerente</b></td></tr>
                     <tr class="col-6 padd">
                         <td class="col-12"><b>Nome: </b><?= $UserName; ?></td>
                         <td class="col-12"><b>Telefone: </b><?= $UserTelefone; ?></td>
@@ -190,10 +185,24 @@ include('../../../inc/config.php');
                     <tr class="col-6 padd">
                         <td class="col-12"><b>Título: </b><?= $OsNome; ?></td>
                         <td class="col-12"><b>Técnico Responsável: </b><?= $OsResponsavelName; ?></td>
+                        <?php
+                            if($OsDataEntrega == ''):
+                                echo '<td class="col-12"><b>Serviço: </b></td>';
+                            endif;    
+                        ?>
                     </tr>
                     <tr class="col-6 padd">
                         <td class="col-12"><b>Data/Hora Abertura: </b><?= $OsData; ?></td>
-                        <td class="col-12"><b>Data/Hora Fechamento: </b><?= $OsDataEntrega; ?></td>
+                        <?php
+                            if($OsDataEntrega == ''):
+                                echo '<div class="col-12">';
+                                    echo '<td class="col-6"><b>Entrada: </b></td>';
+                                    echo '<td class="col-6"><b>Saida: </b></td>';
+                                echo '</div>';    
+                            else:    
+                                echo '<td class="col-12"><b>Data/Hora Fechamento: </b>'.$OsDataEntrega.'</td>';
+                            endif;    
+                        ?>
                     </tr>
                     <tr><td class="ali-center header-td"><b>Descrição do Chamado</b></td></tr>
                     <tr>
@@ -204,7 +213,7 @@ include('../../../inc/config.php');
                         <td height="5" colspan="2" valign="top">
                             <?php
                                 if($OsSolucao == null):
-                                    echo "<br><hr><br><hr><br><hr><br><hr><br>";
+                                    echo "<b>Descrição da Solução:</b> <br><hr><br><hr><br><hr><b>Material Usado:</b><hr><br>";
                                 else:
                                     echo html_entity_decode($OsSolucao);
                                 endif;        
@@ -213,14 +222,24 @@ include('../../../inc/config.php');
                     </tr>
                     <tr><td class="ali-center header-td"><b>Assinaturas</b></td></tr>
                     <tr>
-                        <table width="688" style="margin-top:100px;margin-bottom:20px;" align="center" cellspacing="0">
-                            <tr align="center">
+                        <table width="700" style="margin-top:25px;margin-bottom:20px;" align="center" cellspacing="0">
+                            <tr class="ali-center">
                                 <td class="ali-center">____________________________________</td>
                                 <td class="ali-center">____________________________________</td> 
+                                <td class="ali-center">____________________________________</td>
                             </tr>
-                            <tr align="center">
-                                <td class="ali-center"><?= $UserName; ?></td>    
-                                <td class="ali-center"><?= $OsResponsavelName; ?></td> 
+                            <tr class="ali-center">
+                                <td class="ali-center"><b>Requerente:</b> <?= $UserName; ?></td>
+                                <td class="ali-center"><b>Encarregado do Local</b></td>    
+                                <td class="ali-center">
+                                    <?php 
+                                        if($OsResponsavelName === ''):
+                                            echo '<b>Técnico Responsável</b>';
+                                        else:
+                                            echo '<b>Técnico</b> ' . $OsResponsavelName;
+                                        endif;         
+                                    ?>
+                                </td> 
                             </tr>
                         </table>
                     </tr>
