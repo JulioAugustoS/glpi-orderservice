@@ -1,47 +1,61 @@
 <root>
-    <name>Order Service</name>
-    <key>orderservice</key>
-    <state>beta</state> <!-- stable | unstable | beta | alpha -->
-    <logo></logo>
-    <description>
-        <short>
-            <en>This plugin is capable of generating a service order through the same type.</en>
-            <lang>This plugin is capable of generating a service order through the same type.</lang>
-        </short>
-        <long>
-            <en>This plugin is capable of generating a service order through the same type./en>
-            <lang>This plugin is capable of generating a service order through the same type.</lang>
-        </long>
-    </description>
-    <homepage>https://github.com/JulioAugustoS/glpiorderservice</homepage>
-    <download>https://github.com/JulioAugustoS/glpiorderservice/releases</download>
-    <issues>https://github.com/JulioAugustoS/glpiorderservice/issues</issues>
-    <readme>https://raw.githubusercontent.com/JulioAugustoS/glpiorderservice/master/README.md</readme>
-    <authors>
-        <author>Julio Augusto</author>
-    </authors>
-    <versions>
-        <version>
-            <num>0.0.3</num>
-            <compatibility>9.3</compatibility>
-        </version>
-    </versions>
-    <langs>
-        <lang>en_GB</lang>
-        <lang>pt-BR</lang>
-    </langs>
-    <license>GPL v2+</license>
-    <tags>
-        <en>
-            <tag>Helpdesk</tag>
-        </en>
-        <lang>
-            <tag>Assistence</tag>
-        </lang>
-    </tags>
-    <screenshots>
-        <screenshot>http://suporte.passaromarron.com.br:86/glpi/github/Capturar.PNG</screenshot>
-        <screenshot></screenshot>
-        <screenshot></screenshot>
-    </screenshots>
+   <name>Order Service</name>
+   <key>orderservice</key>
+   <state>beta</state>
+   <logo></logo>
+   <description>
+      <short>
+         <en>This plugins aims to generate service order through open or closed calls</en>
+         <fr>Ce plugin apporte le filtrage des groupes "attribués à" en fonction de la catégorie du ticket</fr>
+      </short>
+      <long>
+         <en>This plugins aims to generate service order through open or closed calls.
+
+        You can define the company data that will appear in the work order.</en>
+         <fr>Ce plugin permet de générer des ordres de services via des appels.
+
+        Vous pouvez définir les données de l'entreprise qui apparaîtront dans le bon de travail.
+         </fr>
+      </long>
+   </description>
+   <homepage>https://github.com/JulioAugustoS/glpiorderservice</homepage>
+   <download>https://github.com/JulioAugustoS/glpiorderservice/releases</download>
+   <issues>https://github.com/JulioAugustoS/glpiorderservice/issues</issues>
+   <readme>https://raw.githubusercontent.com/JulioAugustoS/glpiorderservice/master/README.md</readme>
+   <authors>
+      <author>Julio Augusto</author>
+   </authors>
+   <versions>
+      <version>
+         <num>0.1.2</num>
+         <compatibility>9.3</compatibility>
+      </version>
+      <version>
+         <num>0.1.2</num>
+         <compatibility>0.85</compatibility>
+         <compatibility>0.90</compatibility>
+         <compatibility>9.1</compatibility>
+         <compatibility>9.2</compatibility>
+      </version>
+   </versions>
+   <langs>
+      <lang>en_GB</lang>
+      <lang>fr_FR</lang>
+   </langs>
+   <license>GPL v2+</license>
+   <tags>
+      <en>
+         <tag>Helpdesk</tag>
+         <tag>Category</tag>
+         <tag>Filter</tag>
+      </en>
+      <lang>
+         <tag>Assistance</tag>
+         <tag>Categorie</tag>
+         <tag>Filtre</tag>
+      </lang>
+   </tags>
+   <screenshots>
+      <screenshot>https://camo.githubusercontent.com/c479551b6ff1aa6ca042d63e163a0abdcd57d663/687474703a2f2f7375706f7274652e7061737361726f6d6172726f6e2e636f6d2e62723a38362f676c70692f6769746875622f73637265656e2e504e47</screenshot>
+   </screenshots>
 </root>
