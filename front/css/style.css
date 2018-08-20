@@ -167,8 +167,13 @@ td, th {
 }
 
 #titulo {
-    width: calc(100% - 45%);
+    width: calc(100% - 40%);
     float: left;
+}
+
+#os {
+    width: auto;
+    float: right;
 }
 
 .left {
@@ -211,11 +216,11 @@ input[type="submit1"] {
 }
 
 .size-p {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .os-number {
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .header-td {
