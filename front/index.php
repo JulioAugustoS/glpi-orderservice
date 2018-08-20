@@ -1,3 +1,34 @@
+<?php
+/*
+ * @version $Id: index.php 19 2018-08-20 09:19:05Z walid $
+ LICENSE
+
+  This file is part of the orderservice plugin.
+
+ Order plugin is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ Julio Augusto; either version 2 of the License, or
+ (at your option) any later version.
+
+ Order plugin is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with GLPI; along with itilcategorygroups. If not, see <http://www.gnu.org/licenses/>.
+ --------------------------------------------------------------------------
+ @package   orderservice
+ @author    Julio Augusto
+ @copyright Copyright (c) 2018 Julio Augusto
+ @license   GPLv2+
+            http://www.gnu.org/licenses/gpl.txt
+ @link      https://github.com/JulioAugustoS/glpiorderservice
+ @link      http://www.glpi-project.org/
+ @since     2018
+ --------------------------------------------------------------------------
+ */
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +43,12 @@
 <?php
 
 include('../../../inc/includes.php');
-include('../../../inc/config.php');
+if(GLPI_VERSION <= 9.2):
+    include('../../../config/config.php');
+else:
+    include('../../../inc/config.php');
+endif;    
+
 
     global $DB;
     Session::checkLoginUser();
