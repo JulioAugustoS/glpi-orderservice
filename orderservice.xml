@@ -5,13 +5,17 @@
    <logo></logo>
    <description>
       <short>
-         <en>This plugins aims to generate service order through open or closed calls</en>
+         <en>This plugin aims to generate service order through open or closed calls</en>
+         <cs>Tento zásuvný modul má za cíl vytvářet objednávky servisu prostřednictvím otevřených nebo uzavřených hovorů</cs>
          <fr>Ce plugin apporte le filtrage des groupes "attribués à" en fonction de la catégorie du ticket</fr>
       </short>
       <long>
-         <en>This plugins aims to generate service order through open or closed calls.
+         <en>This plugin aims to generate service order through open or closed calls.
 
         You can define the company data that will appear in the work order.</en>
+         <cs>Tento zásuvný modul má za cíl vytvářet objednávky servisu prostřednictvím otevřených nebo uzavřených hovorů.
+
+        Můžete určit údaje společnosti které se objeví v pracovním příkazu.</cs>
          <fr>Ce plugin permet de générer des ordres de services via des appels.
 
         Vous pouvez définir les données de l'entreprise qui apparaîtront dans le bon de travail.
@@ -49,11 +53,16 @@
          <tag>Category</tag>
          <tag>Filter</tag>
       </en>
-      <lang>
+      <cs>
+         <tag>Služba podpory</tag>
+         <tag>Kategorie</tag>
+         <tag>Filtr</tag>
+      </cs>
+      <fr>
          <tag>Assistance</tag>
          <tag>Categorie</tag>
          <tag>Filtre</tag>
-      </lang>
+      </fr>
    </tags>
    <screenshots>
       <screenshot>https://camo.githubusercontent.com/c479551b6ff1aa6ca042d63e163a0abdcd57d663/687474703a2f2f7375706f7274652e7061737361726f6d6172726f6e2e636f6d2e62723a38362f676c70692f6769746875622f73637265656e2e504e47</screenshot>
