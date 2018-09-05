@@ -5,17 +5,12 @@
    <logo></logo>
    <description>
       <short>
-         <en>This plugins aims to generate service order through open or closed calls</en>
-         <fr>Ce plugin apporte le filtrage des groupes "attribués à" en fonction de la catégorie du ticket</fr>
+         <pt>Este plugins tem como objetivo gerar ordens de serviço através de chamadas abertas ou fechadas</pt>
       </short>
       <long>
-         <en>This plugins aims to generate service order through open or closed calls.
+         <pt>Este plugins tem como objetivo gerar ordens de serviço através de chamadas abertas ou fechadas.
 
-        You can define the company data that will appear in the work order.</en>
-         <fr>Ce plugin permet de générer des ordres de services via des appels.
-
-        Vous pouvez définir les données de l'entreprise qui apparaîtront dans le bon de travail.
-         </fr>
+        Você pode definir os dados da empresa que aparecerão na ordem de serviço.</pt>
       </long>
    </description>
    <homepage>https://github.com/JulioAugustoS/glpiorderservice</homepage>
@@ -39,8 +34,7 @@
       </version>
    </versions>
    <langs>
-      <lang>en_GB</lang>
-      <lang>fr_FR</lang>
+      <lang>pt_BR</lang>
    </langs>
    <license>GPL v2+</license>
    <tags>
