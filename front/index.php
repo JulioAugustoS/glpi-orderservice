@@ -42,13 +42,7 @@
 </head>
 <?php
 
-include('../../../inc/includes.php');
-if(GLPI_VERSION <= 9.2):
-    include('../../../config/config.php');
-else:
-    include('../../../inc/config.php');
-endif;    
-
+include('../../../inc/includes.php'); 
 
     global $DB;
     Session::checkLoginUser();
