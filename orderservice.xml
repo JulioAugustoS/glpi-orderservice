@@ -22,8 +22,19 @@
    </authors>
    <versions>
       <version>
-         <num>0.1.2</num>
+         <num>2.0.0</num>
          <compatibility>9.3</compatibility>
+         <compatibility>9.2</compatibility>
+      </version>
+      <version>
+         <num>0.1.4</num>
+         <compatibility>9.3</compatibility>
+         <compatibility>9.2</compatibility>
+      </version>
+      <version>
+         <num>0.1.3</num>
+         <compatibility>9.3</compatibility>
+         <compatibility>9.2</compatibility>
       </version>
       <version>
          <num>0.1.2</num>
@@ -36,7 +47,7 @@
    <langs>
       <lang>pt_BR</lang>
    </langs>
-   <license>GPL v2+</license>
+   <license>GPLv3</license>
    <tags>
       <en>
          <tag>Helpdesk</tag>
