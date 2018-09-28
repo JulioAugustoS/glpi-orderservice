@@ -2,7 +2,7 @@
    <name>Order Service</name>
    <key>orderservice</key>
    <state>beta</state>
-   <logo></logo>
+   <logo>http://suporte.passaromarron.com.br:86/glpi/github/os.png</logo>
    <description>
       <short>
          <pt>Este plugins tem como objetivo gerar ordens de serviço através de chamadas abertas ou fechadas</pt>
