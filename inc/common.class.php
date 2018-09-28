@@ -94,6 +94,8 @@ class CommonOrderService extends CommonDBTM {
                         telefone,
                         cidade,
                         cnpj,
+                        logo1,
+                        logo2,
                         site
                         FROM glpi_plugin_orderservice_config
                     ";

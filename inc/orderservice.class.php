@@ -30,9 +30,16 @@
  --------------------------------------------------------------------------
  */
 
+global $CFG_GLPI;
+
 include ('common.class.php');
+
+if (!defined('GLPI_ROOT')) {
+    die("Sorry. You can't access this file directly");
+}
+
 if(!defined("PLUGIN_ORDERSERVICE_DIR")){
-    define("PLUGIN_ORDERSERVICE_DIR", "http://localhost/glpi/plugins/orderservice");
+    define("PLUGIN_ORDERSERVICE_DIR", $CFG_GLPI['root_doc'] . "/plugins/orderservice");
 }
 
 class PluginOrderService extends CommonOrderService {
@@ -62,7 +69,7 @@ class PluginOrderService extends CommonOrderService {
 
             if(empty($configPlugin['logo1']) && empty($configPlugin['logo2'])){
                 echo '<img src="'. PLUGIN_ORDERSERVICE_DIR .'/pics/default.png">';
-            }elseif(empty($configPlugin['logo2'])){
+            }elseif(!empty($configPlugin['logo1']) && empty($configPlugin['logo2'])){
                 echo '<img src="'. PLUGIN_ORDERSERVICE_DIR .'/pics/'. $configPlugin['logo1'] .'">';
             }else{
                 echo '<img src="'. PLUGIN_ORDERSERVICE_DIR .'/pics/'. $configPlugin['logo1'] .'"><br>';
